@@ -8,6 +8,16 @@ var typed = new Typed('#typetext', {
 });
 // Typed-Text End-----
 
+//Hire me Button-----
+function openGmail() {
+  var recipient = 'charanrajkbk@gmail.com';
+
+  var url = 'https://mail.google.com/mail/?view=cm&to=' + recipient + '&su=';
+
+  window.open(url, '_blank');
+}
+//Hire me Button End-----
+
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-box ul li a");
 

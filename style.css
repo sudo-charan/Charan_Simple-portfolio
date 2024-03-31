@@ -486,7 +486,7 @@ nav ul li a:hover {
 }
 
 .servicee826 {
-    height: 710px;
+    height: 630px;
     max-width: 1150px;
     margin: auto;
     padding: 0 12px;
@@ -495,7 +495,6 @@ nav ul li a:hover {
 
 .intrests {
     width: 100%;
-    height: 33vh;
     padding: 0 40px;
     margin-top: 35px;
     box-sizing: border-box;
@@ -555,17 +554,106 @@ nav ul li a:hover {
 /** Services End **/
 
 /** Portfolio **/
-
 .portfolio {
     background-color: var(--first-white-color);
+    padding: 50px 0;
 }
 
 .pfolio23e {
-    height: 730px;
     max-width: 1150px;
     margin: auto;
-    padding: 0 12px;
+    /* padding: 0 12px; */
     margin-top: 90px;
+}
+
+.portkjsdg {
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    margin-top: 35px;
+    box-sizing: border-box;
+}
+
+.portkjsdg h2 {
+    font-size: 18px;
+    display: flex;
+    flex-grow: inherit;
+    align-items: center;
+}
+
+.portkjsdg h2::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    margin: 4px 10px;
+    background-color: var(--bodytexts-clr);
+}
+
+.prjcts72h {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prjt-box {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 20px;
+    border: 1px solid #b2b2b2;
+}
+
+.prjt-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: filter 1s ease;
+}
+
+.prjt-box:hover img {
+    filter: blur(1px);
+}
+
+.prjt-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.prjt-box:hover .overlay {
+    opacity: 1;
+}
+
+.prjt-box .overlay h3 {
+    margin-bottom: 10px;
+    color: var(--special-clr);
+}
+
+.prjt-box .overlay a {
+    color: var(--first-white-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 20px;
+    transition: background-color 1s ease;
+}
+
+.prjt-box .overlay a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /** Portfolio End **/
@@ -582,6 +670,8 @@ nav ul li a:hover {
     padding: 0 12px;
     margin-top: 90px;
 }
+
+.contacts-details {}
 
 /** Contact End **/
 
