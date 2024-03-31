@@ -1,6 +1,6 @@
 // Typed-Text---------
 var typed = new Typed('#typetext', {
-  strings: ["Fullstak Developer", "Web Developer", "Coding Enthusiast"],
+  strings: ["Fullstak Developer.", "Web Developer.", "Coding Enthusiast.", "Freelancer."],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -105,3 +105,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 // Animated icons for social media icons End---------
+
+document.addEventListener("DOMContentLoaded", function() {
+  const getInTouchButton = document.getElementById("getin-touch");
+
+  getInTouchButton.addEventListener("click", function() {
+      const contactSection = document.getElementById("contact");
+      contactSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
