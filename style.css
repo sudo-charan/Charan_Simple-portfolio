@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    will-change: transform, opacity;
 }
 
 html, body {
@@ -25,6 +28,7 @@ html::-webkit-scrollbar {
 body {
     background-color: var(--first-white-color);
     position: relative;
+    padding-top: 0;
 }
 
 :root {
@@ -70,11 +74,13 @@ body {
     padding: 0 33px;
     height: 80px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 22;
+    left: 0;
+    z-index: 1000;
     color: var(--first-white-color);
     background-color: var(--body-text-clr);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-box img {
@@ -138,9 +144,10 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
     background-color: transparent;
     pointer-events: none;
+    will-change: transform;
 }
 
 .home762f {
@@ -479,6 +486,21 @@ nav ul li a:hover {
     padding: 24px;
     width: 515px;
     margin-bottom: 24px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.resume__card:hover {
+    transform: translateX(5px);
+    border-color: var(--special-clr);
+}
+
+.resume__card:hover .card__year {
+    background-color: var(--special2-clr);
+}
+
+.resume__card:hover .card__title {
+    color: var(--special-clr);
 }
 
 .card__year {
@@ -491,18 +513,21 @@ nav ul li a:hover {
     font-weight: 400;
     text-align: center;
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
 .card__title {
     color: var(--body-text-clr);
     font-size: 21px;
     margin-bottom: 8px;
+    transition: color 0.3s ease;
 }
 
 .card__subtitle {
     color: rgb(255, 60, 0);
     font-size: 16px;
     margin-bottom: 16px;
+    transition: color 0.3s ease;
 }
 
 /* Responsive Resume Section */
@@ -523,7 +548,7 @@ nav ul li a:hover {
     
     .resume__column {
         width: 100%;
-    padding: 0 20px;
+        padding: 0 20px;
     }
     
     .exp-col {
@@ -532,6 +557,10 @@ nav ul li a:hover {
     
     .resume__card {
         width: 100%;
+    }
+    
+    .resume__card:hover {
+        transform: translateX(5px);
     }
 }
 
@@ -958,69 +987,174 @@ nav ul li a:hover {
 
 /** Footer **/
 .footer {
-    background-color: var(--first-white-color);
-    padding: 40px 0 20px;
-    border-top: 1px solid #dee2e6;
-}
-
-.copyright {
-    text-align: center;
-    padding: 20px 0;
-    color: var(--bodytexts-clr);
-    font-size: 16px;
+    background-color: var(--body-text-clr);
+    color: var(--first-white-color);
+    padding: 60px 0 30px;
     position: relative;
 }
 
-.copyright::before {
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: var(--special-clr);
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    bottom: 0;
     width: 50px;
     height: 2px;
     background-color: var(--special-clr);
 }
 
-.copyright p {
-    margin: 0;
-    padding: 10px 0;
+.footer-section p {
+    color: var(--first-white-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.copyright a {
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--first-white-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: var(--special-clr);
+    transform: translateX(5px);
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.footer .social-links a {
+    color: var(--first-white-color);
+    font-size: 22px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    color: var(--special-clr);
+    transform: translateY(-3px);
+    background-color: var(--first-white-color);
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer .social-links {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .footer .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: var(--first-white-color);
+    font-size: 14px;
+}
+
+.footer-bottom a {
     color: var(--special-clr);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.copyright a:hover {
-    color: var(--special2-clr);
+.footer-bottom a:hover {
+    color: var(--first-white-color);
 }
 
 /* Responsive Footer */
 @media screen and (max-width: 768px) {
     .footer {
-        padding: 30px 0 15px;
+        padding: 40px 0 20px;
     }
     
-    .copyright {
-        font-size: 15px;
-        padding: 15px 0;
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    
+    .social-links {
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .footer {
-        padding: 25px 0 10px;
+    .footer-section h3 {
+        font-size: 18px;
     }
     
-    .copyright {
+    .footer-section p {
         font-size: 14px;
-        padding: 10px 0;
     }
     
-    .copyright::before {
-        width: 40px;
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
     }
 }
 
@@ -1662,4 +1796,94 @@ html {
         font-size: 12px;
         margin-top: 12px;
     }
+}
+
+/* Performance Optimizations */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    will-change: transform, opacity;
+}
+
+/* Optimize image loading */
+img {
+    content-visibility: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Optimize font loading */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-display: swap;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Optimize scroll behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Optimize particles background */
+.particles-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: transparent;
+    pointer-events: none;
+    will-change: transform;
+}
+
+/* Optimize transitions */
+.transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
+}
+
+/* Optimize hover effects */
+.hover-effect {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow;
+}
+
+/* Optimize mobile menu */
+@media screen and (max-width: 768px) {
+    .nav-box {
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
+    }
+}
+
+/* Optimize timeline animations */
+.timeline__item {
+    will-change: transform, opacity;
+}
+
+/* Optimize skill items */
+.skill-item {
+    will-change: transform;
+}
+
+/* Optimize scroll reveal */
+.reveal {
+    will-change: transform, opacity;
 }

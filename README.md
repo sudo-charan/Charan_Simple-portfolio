@@ -1,51 +1,96 @@
 # Portfolio Website
 
-This repository contains the source code for my personal portfolio website. The website is built using HTML5, CSS, and JavaScript.
+A modern, responsive portfolio website showcasing my skills, projects, and professional journey. Built with HTML, CSS, and JavaScript.
 
-## Features
+## 🌟 Features
 
-- **Responsive Design:** The website is designed to be fully responsive and accessible on various devices and screen sizes.
-  
-- **Interactive UI:** Utilizes JavaScript to provide an interactive user interface with smooth animations and transitions.
-  
-- **Clean and Modern Layout:** The design focuses on simplicity, readability, and a modern aesthetic to showcase my projects and skills effectively.
-  
-- **Project Showcase:** Includes a section to showcase my projects with descriptions, images, and links to live demos or GitHub repositories.
-  
-- **Skills and Experience:** Details my skills, experience, and education in an organized and visually appealing manner.
-  
-- **Contact Form:** Features a contact form for visitors to reach out to me directly through the website.
+- **Modern Design**: Clean and professional UI with smooth animations
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Interactive Elements**: 
+  - Animated social media icons
+  - Smooth scrolling navigation
+  - Interactive timeline
+  - Project showcase with hover effects
+- **Contact Form**: Integrated contact form for easy communication
+- **Performance Optimized**: 
+  - Lazy loading for images
+  - Optimized animations
+  - Fast loading times
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- HTML5
-- CSS
-- JavaScript
+- **Frontend**:
+  - HTML5
+  - CSS
+  - JavaScript
+  - [Remix Icons](https://remixicon.com/)
+  - [Boxicons](https://boxicons.com/)
+  - [Typed.js](https://github.com/mattboldt/typed.js/) for typing animations
+  - [Particles.js](https://vincentgarreau.com/particles.js/) for background effects
+  - [Lottie](https://lottiefiles.com/) for animated icons
 
-## Getting Started
+## 📁 Project Structure
 
-### Prerequisites
+```
+Portfolio/
+├── assets/          # Animation JSON files
+├── imgs/            # Images and icons
+├── js/              # JavaScript files
+│   ├── script.js    # Main JavaScript file
+│   └── particle.js  # Particles configuration
+├── index.html       # Main HTML file
+├── style.css        # Main stylesheet
+└── README.md        # Project documentation
+```
 
-- Web Browser (Chrome, Firefox, Safari, etc.)
+## 🚀 Getting Started
 
-### Installation
-
-1. Clone the repository:
-
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/sudo-charan/Portfolio.git
+   ```
 
-2. Navigate to the project directory:
-
+2. **Navigate to the project directory**
    ```bash
-   cd portfolio-website
+   cd Portfolio
+   ```
 
-3. Open index.html in your preferred web browser to view the website locally.
+3. **Open the project**
+   - Open `index.html` in your web browser
+   - Or use a local development server
 
-## Usage
 
-Feel free to explore the website and check out my projects, skills, and experience. If you'd like to get in touch, you can use the contact form or connect with me on social media.
+## 📱 Responsive Design
 
-## Contributing
+The website is fully responsive and optimized for:
+- Desktop (1200px and above)
+- Laptop (992px - 1199px)
+- Tablet (768px - 991px)
+- Mobile (576px - 767px)
+- Small Mobile (below 576px)
 
-If you'd like to contribute to the project or have suggestions for improvements, please fork the repository and submit a pull request or open an issue with your ideas.
+## 🔧 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👨‍💻 Author
+
+- **Charanraj M**
+- GitHub: [@sudo-charan](https://github.com/sudo-charan)
+- LinkedIn: [Charanraj M](https://www.linkedin.com/in/charanraj-m-ba5371288)
+- Twitter: [@charannaik30](https://twitter.com/charannaik30)
+
+## 🙏 Acknowledgments
+
+- [Remix Icons](https://remixicon.com/) for the beautiful icons
+- [Typed.js](https://github.com/mattboldt/typed.js/) for the typing animation
+- [Particles.js](https://vincentgarreau.com/particles.js/) for the background effects
+- [Lottie](https://lottiefiles.com/) for the animated social media icons
