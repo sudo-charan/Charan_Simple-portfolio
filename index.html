@@ -32,7 +32,10 @@
     <!--Navbar-->
     <div class="nav-box">
         <nav>
-            <img src="logo.png">
+            <img src="logo.png" alt="Charanraj Portfolio Logo" loading="lazy">
+            <div class="menu-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -54,10 +57,19 @@
                 <h1>Charanraj</h1>
                 <h4>And I'm a <span id="typetext" class="typetext"></span></h4>
                 <div class="socil-media1">
-                   <a href="https://www.instagram.com/heyy.charann_?igsh=czF3ZW12a3NtdXRi"><div class="icon-container1" data-animation-path="./assets/instagram.json"></div></a>
-                    <a href="https://x.com/charannaik30?t=CDYGsWYBFjHSn5WKh6EvUA&s=09"><div class="icon-container" data-animation-path="./assets/twitter.json"></div></a>
-                    <a href="https://github.com/sudo-charan"><div class="icon-container" data-animation-path="./assets/github.json"></div></a>
-                    <a href="https://www.linkedin.com/in/charanraj-m-ba5371288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><div class="icon-container" data-animation-path="./assets/linkedin.json"></div></a>
+                    <a href="https://www.instagram.com/heyy.charann_?igsh=czF3ZW12a3NtdXRi">
+                        <div class="icon-container1" data-animation-path="./assets/instagram.json"></div>
+                    </a>
+                    <a href="https://x.com/charannaik30?t=CDYGsWYBFjHSn5WKh6EvUA&s=09">
+                        <div class="icon-container" data-animation-path="./assets/twitter.json"></div>
+                    </a>
+                    <a href="https://github.com/sudo-charan">
+                        <div class="icon-container" data-animation-path="./assets/github.json"></div>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/charanraj-m-ba5371288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <div class="icon-container" data-animation-path="./assets/linkedin.json"></div>
+                    </a>
                 </div>
 
                 <div class="hme-btns">
@@ -66,7 +78,7 @@
                 </div>
             </div>
             <div class="hme-main-pic">
-                <img src="./imgs/mepic.png">
+                <img src="./imgs/mepic.png" alt="Charanraj Profile Picture" loading="lazy">
             </div>
             <div class="home-dwn-arrow">
                 <a href="#about"><i class="ri-arrow-down-double-line"></i></a>
@@ -103,27 +115,29 @@
                     <div class="about-rght">
                         <p><span>Name: </span> Charanraj</p>
                         <p style="display: flex;"><span>Email: </span> <span
-                                style="color: #20c997; margin-left: 4px;">charanrajkbk@gmail.com</span></p>
-                        <p><span>Age: </span> 20</p>
-                        <p><span>From: </span> Manglore, Karnataka 📍</p>
-                        <button class="btn-dwnd-cv">Download CV</button>
+                                style="color: var(--body-text-clr); margin-left: 4px; font-weight: normal;">charanrajkbk@gmail.com</span>
+                        </p>
+                        <p><span>Age: </span> 21</p>
+                        <p><span>From: </span> Puttur, Karnataka 📍</p>
+                        <a href="https://drive.google.com/file/d/1Ox_hFAoQFYVItbBijMtYze1klo3AP2Wa/view?usp=sharing"
+                            target="_blank" rel="noopener" class="btn-dwnd-cv">Download Resume</a>
                     </div>
                 </div>
                 <div class="about-numbers">
                     <div class="number-data">
-                        <h4 class="aboutData-number">00+</h4>
+                        <h4 class="aboutData-number" data-target="1">00+</h4>
                         <p class="aboutData-desc">Years Experience</p>
                     </div>
                     <div class="number-data">
-                        <h4 class="aboutData-number">00+</h4>
+                        <h4 class="aboutData-number" data-target="5">00+</h4>
                         <p class="aboutData-desc">Happy Clients</p>
                     </div>
                     <div class="number-data">
-                        <h4 class="aboutData-number">02+</h4>
+                        <h4 class="aboutData-number" data-target="5">00+</h4>
                         <p class="aboutData-desc">Projects Done</p>
                     </div>
                     <div class="number-data">
-                        <h4 class="aboutData-number">00</h4>
+                        <h4 class="aboutData-number" data-target="1">00</h4>
                         <p class="aboutData-desc">Awards Received</p>
                     </div>
                 </div>
@@ -144,9 +158,18 @@
                     <div class="resume__column">
                         <h2 class="resume__title">My Education</h2>
                         <div class="resume__card">
+                            <p class="card__year">2024 - 2027</p>
+                            <h3 class="card__title">B.Tech - Information Science and Engineering</h3>
+                            <p class="card__subtitle">NMAM Institute of Technology, Nitte karkala</p>
+                            <p class="card__desc">
+                                Currently pursuing Bachelor of Technology in Information Science and Engineering at NMAM
+                                Institute of Technology, Nitte.
+                            </p>
+                        </div>
+                        <div class="resume__card">
                             <p class="card__year">2021 - 2024</p>
                             <h3 class="card__title">Computer Science & Engineering</h3>
-                            <p class="card__subtitle">Vivekananda Polytechnic Puttur</p>
+                            <p class="card__subtitle">Vivekananda Polytechnic, Puttur</p>
                             <p class="card__desc">
                                 Completed Diploma in Computer Science and Engineering from Vivekananda Polytechnic,
                                 Puttur, equipped with a strong foundation in programming and software engineering
@@ -178,7 +201,7 @@
                         <div class="resume__card">
                             <p class="card__year">Jan 2024 - March 2024</p>
                             <h3 class="card__title">Fullstack Developer Internship</h3>
-                            <p class="card__subtitle">Zephyr Technologies and Solutions pvt ltd</p>
+                            <p class="card__subtitle">Zephyr Technologies and Solutions pvt ltd, Mangalore</p>
                             <p class="card__desc">
                                 Completed Fullstack Developer Internship at Zephyr Technologies, gaining experience in
                                 both frontend and backend web development.
@@ -189,181 +212,245 @@
                 <h2 class="skills__title">My Skills</h2>
                 <div class="skills-container">
                     <div class="skill-cols">
-                        <h1 style="font-size: 23px;">Languages and Databases</h1>
-                        <p class="skill-logos">
-                            <img src="./imgs/html.png" alt="logo.png" style="width: 65px;">
-                            <img src="./imgs/css.png" alt="logo.png" style="width: 65px;">
-                            <img src="./imgs/java.png" alt="logo.png">
-                            <img src="./imgs/python.png" alt="logo.png" style="width: 120px;">
-                            <img src="./imgs/mysql.png" alt="logo.png" style="width: 100px;">
-                            <img src="./imgs/php.png" alt="logo.png">
-                            <img src="./imgs/react.png" alt="logo.png">
-                            <img src="./imgs/mongodb.png" alt="logo.png" style="width: 110px;">
-                        </p>
+                        <h3>Languages and Databases</h3>
+                        <div class="skill-logos">
+                            <div class="skill-item">
+                                <i class='bx bxl-html5' style="color: #E44D26;"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-css3' style="color: #264DE4;"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-javascript' style="color: #F7DF1E;"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-java' style="color: #007396;"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-python' style="color: #3776AB;"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxs-data' style="color: #00758F;"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-php' style="color: #777BB4;"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-react' style="color: #61DAFB;"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-mongodb'></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxs-server' style="color: #FB7A24;"></i>
+                                <span>XAMPP</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-cols">
-                        <h1 style="font-size: 23px;">Tools</h1>
-                        <p class="skill-logos">
-                            <img src="./imgs/github.png" alt="logo.png" style="width: 100px;">
-                            <img src="./imgs/ps.png" alt="logo.png" style="width: 100px;">
-                            <img src="./imgs/git.png" alt="logo.png" style="width: 80px;">
-                            <img src="./imgs/figma.png" alt="logo.png" style="width: 80px;">
-                            <img src="./imgs/vscode.png" alt="logo.png" style="width: 180px;">
-                        </p>
+                        <h3>Tools</h3>
+                        <div class="skill-logos">
+                            <div class="skill-item">
+                                <i class='bx bxl-github' style="color: #181717;"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-adobe' style="color: #FF0000;"></i>
+                                <span>Photoshop</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-git' style="color: #F05032;"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-figma' style="color: #F24E1E;"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-visual-studio'></i>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-    </section>
-    <!--Resume end -->
+        </section>
+        <!--Resume end -->
 
-    <!--Services-->
-    <div class="services section" id="services">
-        <div class="servicee826">
-            <h2 class="titleBackground">
-                Services
-                <p class="text-overlap">
-                    What i do
-                </p>
-            </h2>
-            <div class="intrests">
-                <h2 class="ptitle">Services</h2>
-                <div class="int-items">
-                    <div class="int-crd">
-                        <i class="ri-global-line" style="color: #f87f0e;"></i>
-                        <h2 class="int-txt">Web Development</h2>
-                    </div>
-                    <div class="int-crd">
-                        <i class="ri-pages-line" style="color: #0d41e1;"></i>
-                        <h2 class="int-txt">Web Design</h2>
-                    </div>
-                    <div class="int-crd">
-                        <i class="ri-file-code-line" style="color: #e70e02;"></i>
-                        <h2 class="int-txt">Frontend Dev</h2>
-                    </div>
-                    <div class="int-crd">
-                        <i class="ri-database-2-line" style="color: #1fd224;"></i>
-                        <h2 class="int-txt">Backend Dev</h2>
-                    </div>
-                    <div class="int-crd">
-                        <i class="ri-brush-line" style="color: #d21df2;"></i>
-                        <h2 class="int-txt">Graphic Design</h2>
-                    </div>
-                    <div class="int-crd">
-                        <i class="ri-terminal-window-line" style="color: #afc606;"></i>
-                        <h2 class="int-txt">Ui/Ux Design</h2>
+        <!--Services-->
+        <div class="services section" id="services">
+            <div class="servicee826">
+                <h2 class="titleBackground">
+                    Services
+                    <p class="text-overlap">
+                        What i do
+                    </p>
+                </h2>
+                <div class="intrests">
+                    <h2 class="ptitle">Services</h2>
+                    <div class="int-items">
+                        <div class="int-crd">
+                            <i class="ri-global-line" style="color: #f87f0e;"></i>
+                            <h2 class="int-txt">Web Development</h2>
+                        </div>
+                        <div class="int-crd">
+                            <i class="ri-pages-line" style="color: #0d41e1;"></i>
+                            <h2 class="int-txt">Web Design</h2>
+                        </div>
+                        <div class="int-crd">
+                            <i class="ri-file-code-line" style="color: #e70e02;"></i>
+                            <h2 class="int-txt">Frontend Dev</h2>
+                        </div>
+                        <div class="int-crd">
+                            <i class="ri-database-2-line" style="color: #1fd224;"></i>
+                            <h2 class="int-txt">Backend Dev</h2>
+                        </div>
+                        <div class="int-crd">
+                            <i class="ri-brush-line" style="color: #d21df2;"></i>
+                            <h2 class="int-txt">Graphic Design</h2>
+                        </div>
+                        <div class="int-crd">
+                            <i class="ri-terminal-window-line" style="color: #afc606;"></i>
+                            <h2 class="int-txt">Ui/Ux Design</h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Services end -->
+        <!--Services end -->
 
-    <!-- Portfolio-->
-    <div class="portfolio section" id="portfolio">
-        <div class="pfolio23e">
-            <h2 class="titleBackground">
-                Portfolio
-                <p class="text-overlap">
-                    My works
-                </p>
-            </h2>
-            <div class="portkjsdg">
-                <h2>Projects</h2>
-                <div class="prjcts72h">
-                    <div class="prjt-box">
-                        <img src="./imgs/4942432.jpg" alt="Project Image">
-                        <div class="overlay">
-                            <h3>Portfolio</h3>
-                            <a href="https://github.com/sudo-charan/Charan_Simple-portfolio"><i
-                                    class='bx bx-link-external'></i></a>
+        <!-- Portfolio-->
+        <div class="portfolio section" id="portfolio">
+            <div class="pfolio23e">
+                <h2 class="titleBackground">
+                    Portfolio
+                    <p class="text-overlap">
+                        My works
+                    </p>
+                </h2>
+                <div class="portkjsdg">
+                    <h2>Projects</h2>
+                    <div class="prjcts72h">
+                        <div class="prjt-box">
+                            <img src="./imgs/4942432.jpg" alt="Project Image" loading="lazy">
+                            <div class="overlay">
+                                <h3>Portfolio</h3>
+                                <a href="https://github.com/sudo-charan/Charan_Simple-portfolio"><i
+                                        class='bx bx-link-external'></i></a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="prjt-box">
-                        <img src="./imgs/flip-project.png" alt="Project Image">
-                        <div class="overlay">
-                            <h3>Flipkard Clone</h3>
-                            <a href="https://github.com/sudo-charan/flipkart_clone_html-css"><i
-                                    class='bx bx-link-external'></i></a>
+                        <div class="prjt-box">
+                            <img src="./imgs/flip-project.png" alt="Project Image" loading="lazy">
+                            <div class="overlay">
+                                <h3>Flipkard Clone</h3>
+                                <a href="https://github.com/sudo-charan/flipkart_clone_html-css"><i
+                                        class='bx bx-link-external'></i></a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="prjt-box">
-                        <img src="./imgs/238.jpg" style="object-fit: cover;" alt="Project Image">
-                        <div class="overlay">
-                            <h3>Food recipe finder</h3>
-                            <a href="https://github.com/sudo-charan/Food_recipe_finder-PHP"><i
-                                    class='bx bx-link-external'></i></a>
+                        <div class="prjt-box">
+                            <img src="./imgs/238.jpg" style="object-fit: cover;" alt="Project Image" loading="lazy">
+                            <div class="overlay">
+                                <h3>Food recipe finder</h3>
+                                <a href="https://github.com/sudo-charan/Food_recipe_finder-PHP"><i
+                                        class='bx bx-link-external'></i></a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="prjt-box">
-                        <img src="./imgs/processing.png" alt="Project Image">
-                        <div class="overlay">
-                            <h3>Project Name</h3>
-                            <a href="#"><i class='bx bx-link-external'></i></i></a>
+                        <div class="prjt-box">
+                            <img src="./imgs/processing.png" alt="Project Image" loading="lazy">
+                            <div class="overlay">
+                                <h3>Image Search Engine</h3>
+                                <a href="https://github.com/sudo-charan/image_search_engine"><i
+                                        class='bx bx-link-external'></i></i></a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="prjt-box">
-                        <img src="./imgs/processing.png" alt="Project Image">
-                        <div class="overlay">
-                            <h3>Project Name</h3>
-                            <a href="#"><i class='bx bx-link-external'></i></i></a>
+                        <div class="prjt-box">
+                            <img src="./imgs/processing.png" alt="Project Image" loading="lazy">
+                            <div class="overlay">
+                                <h3>Project Name</h3>
+                                <a href="#"><i class='bx bx-link-external'></i></i></a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="prjt-box">
-                        <img src="./imgs/processing.png" alt="Project Image">
-                        <div class="overlay">
-                            <h3>Project Name</h3>
-                            <a href="#"><i class='bx bx-link-external'></i></i></a>
+                        <div class="prjt-box">
+                            <img src="./imgs/processing.png" alt="Project Image" loading="lazy">
+                            <div class="overlay">
+                                <h3>Project Name</h3>
+                                <a href="#"><i class='bx bx-link-external'></i></i></a>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Portfolio end -->
+        <!--Portfolio end -->
 
-    <!--Contact-->
-    <section class="contact section" id="contact">
-        <div class="cntct-box">
-            <h2 class="titleBackground">
-                Contact
-                <p class="text-overlap">
-                    Get in Touch
-                </p>
-            </h2>
-            <div class="contacts-details">
-                <div class="left-details">
-                    <ul class="contact-list">
-                        <li><i class="ri-map-pin-line"></i> India, Karnataka</li>
-                        <li><i class="ri-phone-line"></i> +91 (00000)-(00000)</li>
-                        <li><i class="ri-mail-line"></i> charanaikofficial@gmail.com</li>
-                        <li><i class="ri-github-line"></i> <a href="https://github.com/sudo-charan" target="_blank">github.com/sudo-charan</a></li>
-                    </ul>
+        <!--Contact-->
+        <section class="contact section" id="contact">
+            <div class="cntct-box">
+                <h2 class="titleBackground">
+                    Contact
+                    <p class="text-overlap">
+                        Get in Touch
+                    </p>
+                </h2>
+                <div class="contacts-details">
+                    <div class="left-details">
+                        <ul class="contact-list">
+                            <li><i class="ri-map-pin-line"></i> India, Karnataka</li>
+                            <li><i class="ri-phone-line"></i> +91 7899807309</li>
+                            <li><i class="ri-mail-line"></i> charanaikofficial@gmail.com</li>
+                            <li><i class="ri-github-line"></i> <a href="https://github.com/sudo-charan" target="_blank"
+                                    rel="noopener">github.com/sudo-charan</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-details">
+                        <form class="contact-form" action="https://formspree.io/f/mrbpjpdq" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--Contact end -->
+        </section>
+        <!--Contact end -->
 
-    <!--Footer-->
-    <div class="footer">
-        <div class="copyright">
-            <p>Copyright &copy; 2024 Design By Charanraj.M</p>
+        <!--Footer-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; 2024 Design By Charanraj.M</p>
+            </div>
         </div>
-    </div>
-    <!--Footer end -->
+        <!--Footer end -->
     </div>
 
     <!--JS Script-->
     <script src="./js/script.js"></script>
     <script src="./js/particle.js"></script>
-
 </body>
 
 </html>
